@@ -44,7 +44,7 @@ app.post('/create-account',async (req,res) =>{
     }
 );
 
-return res.status(201).json({
+  return res.status(201).json({
     error: false,
     user: {fullName: user.fullName, email: user.email },
     accessToken,
@@ -88,6 +88,9 @@ app.post("/login", async (req, res) => {
         });
 });
 
+app.get('/get-user',async (req,res) =>{
+    
+})
 
 app.listen(8000);
 module.exports = app;
